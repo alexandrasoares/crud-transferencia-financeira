@@ -1,1 +1,8 @@
-<app-nova-transferencia></app-nova-transferencia>
+<app-nova-transferencia
+  (transferencia)="transferido($event)"
+  (valorComErro)="exibirModalErro()"
+></app-nova-transferencia>
+
+<p>Valor: {{ valorTransferido?.valor }}</p>
+
+<p>Destino: {{ valorTransferido?.destino }}</p>

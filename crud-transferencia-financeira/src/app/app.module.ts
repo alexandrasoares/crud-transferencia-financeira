@@ -5,11 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NovaTransferenciaComponent } from './nova-transferencia/app-nova-transferencia.component';
+import { AppExtratoComponent } from './app-extrato/app-extrato.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NovaTransferenciaComponent
+    NovaTransferenciaComponent,
+    AppExtratoComponent
   ],
   imports: [
     BrowserModule,
