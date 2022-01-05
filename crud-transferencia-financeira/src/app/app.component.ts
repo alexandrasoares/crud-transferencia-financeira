@@ -10,15 +10,6 @@ export class AppComponent {
   title = 'Gerenciamento de Transações Financeiras';
   mensageErro: any;
 
-  constructor(
-    private transferenciaService: TransferenciaService
-  ) {}
+  constructor() {}
 
-  transferido($event) {
-    this.transferenciaService.adicionarTransferencias($event);
-  }
-
-  exibirModalErro() {
-    console.log('message erro');
-  }
 }
