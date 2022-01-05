@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Gerenciamento de Transações Financeiras';
-  valorTransferido: any;
+  valoresTransferidos: any[] = [];
   mensageErro: any;
 
   transferido($event) {
     console.log($event);
-    this.valorTransferido = $event;
+    this.valoresTransferidos.push($event);
   }
 
   exibirModalErro() {
