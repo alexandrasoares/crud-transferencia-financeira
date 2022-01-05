@@ -12,7 +12,8 @@ export class AppComponent {
 
   transferido($event) {
     console.log($event);
-    this.valoresTransferidos.push($event);
+    const transferencia = {... $event, data: new Date()}
+    this.valoresTransferidos.push(transferencia);
   }
 
   exibirModalErro() {
