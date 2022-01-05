@@ -4,14 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NovaTransferenciaComponent } from './nova-transferencia/app-nova-transferencia.component';
-import { AppExtratoComponent } from './app-extrato/app-extrato.component';
+import { NovaTransferenciaComponent } from './nova-transferencia/transferencia.component';
+import { ExtratoComponent } from './extrato/extrato.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NovaTransferenciaComponent,
-    AppExtratoComponent
+    ExtratoComponent,
   ],
   imports: [
     BrowserModule,

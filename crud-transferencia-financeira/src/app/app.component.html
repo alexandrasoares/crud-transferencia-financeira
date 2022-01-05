@@ -3,6 +3,4 @@
   (valorComErro)="exibirModalErro()"
 ></app-nova-transferencia>
 
-<p>Valor: {{ valorTransferido?.valor }}</p>
-
-<p>Destino: {{ valorTransferido?.destino }}</p>
+<app-extrato [valorTransferido]="valorTransferido"></app-extrato>

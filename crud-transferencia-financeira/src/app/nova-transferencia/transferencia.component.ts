@@ -2,8 +2,8 @@ import { Component, EventEmitter, Output } from "@angular/core";
 
 @Component({
     selector: 'app-nova-transferencia',
-    templateUrl: './app-nova-transferencia.component.html',
-    styleUrls: ['./app-nova-transferencia.component.scss']
+    templateUrl: './nova-transferencia.component.html',
+    styleUrls: ['./nova-transferencia.component.scss']
 })
 export class NovaTransferenciaComponent {
 

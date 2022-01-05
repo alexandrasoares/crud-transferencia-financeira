@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppExtratoComponent } from './app-extrato.component';
+import { ExtratoComponent } from './extrato.component';
 
-describe('AppExtratoComponent', () => {
-  let component: AppExtratoComponent;
-  let fixture: ComponentFixture<AppExtratoComponent>;
+describe('ExtratoComponent', () => {
+  let component: ExtratoComponent;
+  let fixture: ComponentFixture<ExtratoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AppExtratoComponent ]
+      declarations: [ ExtratoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AppExtratoComponent);
+    fixture = TestBed.createComponent(ExtratoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
