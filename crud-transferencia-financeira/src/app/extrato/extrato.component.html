@@ -7,7 +7,7 @@
 
   <tbody>
     <tr *ngFor="let transferencia of valoresTransferidos">
-      <td>{{ transferencia?.data }}</td>
+      <td>{{ transferencia?.data | date: "short" }}</td>
       <td>{{ transferencia?.valor }}</td>
       <td>{{ transferencia?.destino }}</td>
     </tr>
