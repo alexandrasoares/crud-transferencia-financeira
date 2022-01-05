@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TransferenciaService } from './services/transferencia.service';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Gerenciamento de Transações Financeiras';
-  valoresTransferidos: any[] = [];
   mensageErro: any;
 
+  constructor(
+    private transferenciaService: TransferenciaService
+  ) {}
+
   transferido($event) {
-    console.log($event);
-    const transferencia = {... $event, data: new Date()}
-    this.valoresTransferidos.push(transferencia);
+    this.transferenciaService.adicionarTransferencias($event);
   }
 
   exibirModalErro() {
