@@ -1,5 +1,15 @@
-<div *ngFor="let transferencia of valoresTransferidos">
-  <p>Valor: {{ transferencia?.valor }}</p>
-  <p>Destino: {{ transferencia?.destino }}</p>
-  <p>Data: {{ transferencia?.data }}</p>
-</div>
+<table>
+  <thead>
+    <th>Data</th>
+    <th>Valor</th>
+    <th>Destino</th>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let transferencia of valoresTransferidos">
+      <td>{{ transferencia?.data }}</td>
+      <td>{{ transferencia?.valor }}</td>
+      <td>{{ transferencia?.destino }}</td>
+    </tr>
+  </tbody>
+</table>
